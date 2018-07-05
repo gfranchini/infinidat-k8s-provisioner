@@ -7,7 +7,7 @@ COPY licenses /licenses
 
 RUN mkdir -p /export
 
-COPY infinidat-k8s-provisioner ./infinidat-k8s-provisioner
+COPY deploy/docker/infinidat-k8s-provisioner ./infinidat-k8s-provisioner
 
 #Adding user to avoid running of container in root mode
 RUN useradd -m  infinidat
