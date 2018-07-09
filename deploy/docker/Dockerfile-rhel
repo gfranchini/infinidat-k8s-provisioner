@@ -1,7 +1,13 @@
 # Dockerfile to create image for infinidat k8s provisioner
 FROM registry.access.redhat.com/rhel7
 
-LABEL maintainer="connect-tech@redhat.com"
+LABEL name="APPLICATION NAME" \
+      maintainer="EMAIL@ADDRESS.COM" \
+      vendor="COMPANY NAME" \
+      version="VERSION NUMBER" \
+      release="RELEASE NUMBER" \
+      summary="APPLICATION SUMMARY" \
+      description="APPLICATION DESCRIPTION" \
 
 COPY licenses /licenses
 
