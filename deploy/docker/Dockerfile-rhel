@@ -11,6 +11,10 @@ LABEL name="APPLICATION NAME" \
 
 COPY licenses /licenses
 
+RUN yum -y update-minimal --disablerepo "*" --enablerepo rhel-7-server-rpms --setopt=tsflags=nodocs \
+      --security --sec-severity=Important --sec-severity=Critical && \
+    yum clean all
+
 RUN mkdir -p /export
 
 COPY deploy/docker/infinidat-k8s-provisioner ./infinidat-k8s-provisioner
