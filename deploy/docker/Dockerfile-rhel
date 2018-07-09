@@ -7,7 +7,7 @@ LABEL name="APPLICATION NAME" \
       version="VERSION NUMBER" \
       release="RELEASE NUMBER" \
       summary="APPLICATION SUMMARY" \
-      description="APPLICATION DESCRIPTION" \
+      description="APPLICATION DESCRIPTION"
 
 COPY licenses /licenses
 
